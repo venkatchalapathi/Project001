@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#11000000"
+    android:background="@drawable/bg"
     tools:context=".MainActivity">
 
     <!-- res/layout/activity_registration.xml -->
@@ -18,202 +18,187 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
-            <androidx.cardview.widget.CardView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="8dp">
-                <LinearLayout
+                android:orientation="vertical">
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:text="Personal Information"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:textSize="18sp"
+                    />
+                <!-- res/layout/activity_main.xml -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/fullname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:hint="Full Name"
+                    app:boxStrokeWidth="1dp"
+                    app:boxStrokeColor="@color/black"
+                    app:boxBackgroundColor="@android:color/transparent"
+                    app:boxCornerRadiusBottomEnd="8dp"
+                    app:boxCornerRadiusBottomStart="8dp"
+                    app:boxCornerRadiusTopEnd="8dp"
+                    app:boxCornerRadiusTopStart="8dp">
 
-                    <TextView
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_fullname"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Personal Information"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginTop="8dp"
-                        android:textSize="18sp"
-                        />
-                    <!-- res/layout/activity_main.xml -->
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:id="@+id/fullname"
+                        android:inputType="text"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/fathername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:hint="Father Name"
+                    app:boxStrokeWidth="1dp"
+                    app:boxStrokeColor="@color/black"
+                    app:boxBackgroundColor="@android:color/transparent"
+                    app:boxCornerRadiusBottomEnd="8dp"
+                    app:boxCornerRadiusBottomStart="8dp"
+                    app:boxCornerRadiusTopEnd="8dp"
+                    app:boxCornerRadiusTopStart="8dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_fathername"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="16dp"
-                        android:hint="Full Name"
-                        app:boxStrokeWidth="1dp"
-                        app:boxStrokeColor="@color/black"
-                        app:boxBackgroundColor="@android:color/transparent"
-                        app:boxCornerRadiusBottomEnd="8dp"
-                        app:boxCornerRadiusBottomStart="8dp"
-                        app:boxCornerRadiusTopEnd="8dp"
-                        app:boxCornerRadiusTopStart="8dp">
+                        android:inputType="text"/>
 
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/et_fullname"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:inputType="text"/>
+                </com.google.android.material.textfield.TextInputLayout>
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:hint="Contact Number"
+                    app:boxStrokeWidth="1dp"
+                    app:boxStrokeColor="@color/black"
+                    app:boxBackgroundColor="@android:color/transparent"
+                    app:boxCornerRadiusBottomEnd="8dp"
+                    app:boxCornerRadiusBottomStart="8dp"
+                    app:boxCornerRadiusTopEnd="8dp"
+                    app:boxCornerRadiusTopStart="8dp">
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:id="@+id/fathername"
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_contact"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="16dp"
-                        android:hint="Father Name"
-                        app:boxStrokeWidth="1dp"
-                        app:boxStrokeColor="@color/black"
-                        app:boxBackgroundColor="@android:color/transparent"
-                        app:boxCornerRadiusBottomEnd="8dp"
-                        app:boxCornerRadiusBottomStart="8dp"
-                        app:boxCornerRadiusTopEnd="8dp"
-                        app:boxCornerRadiusTopStart="8dp">
+                        android:inputType="phone"/>
 
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/et_fathername"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:inputType="text"/>
+                </com.google.android.material.textfield.TextInputLayout>
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:hint="Email"
+                    app:boxStrokeWidth="1dp"
+                    app:boxStrokeColor="@color/black"
+                    app:boxBackgroundColor="@android:color/transparent"
+                    app:boxCornerRadiusBottomEnd="8dp"
+                    app:boxCornerRadiusBottomStart="8dp"
+                    app:boxCornerRadiusTopEnd="8dp"
+                    app:boxCornerRadiusTopStart="8dp">
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:id="@+id/contact"
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_email"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="16dp"
-                        android:hint="Contact Number"
-                        app:boxStrokeWidth="1dp"
-                        app:boxStrokeColor="@color/black"
-                        app:boxBackgroundColor="@android:color/transparent"
-                        app:boxCornerRadiusBottomEnd="8dp"
-                        app:boxCornerRadiusBottomStart="8dp"
-                        app:boxCornerRadiusTopEnd="8dp"
-                        app:boxCornerRadiusTopStart="8dp">
+                        android:inputType="textEmailAddress"/>
 
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/et_contact"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:inputType="phone"/>
+                </com.google.android.material.textfield.TextInputLayout>
 
-                    </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:id="@+id/email"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="16dp"
-                        android:hint="Email"
-                        app:boxStrokeWidth="1dp"
-                        app:boxStrokeColor="@color/black"
-                        app:boxBackgroundColor="@android:color/transparent"
-                        app:boxCornerRadiusBottomEnd="8dp"
-                        app:boxCornerRadiusBottomStart="8dp"
-                        app:boxCornerRadiusTopEnd="8dp"
-                        app:boxCornerRadiusTopStart="8dp">
 
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/et_email"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:inputType="textEmailAddress"/>
-
-                    </com.google.android.material.textfield.TextInputLayout>
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="8dp"
-                android:layout_marginTop="8dp">
+                android:layout_height="wrap_content">
+                <!-- res/layout/activity_location_selection.xml -->
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <!-- res/layout/activity_location_selection.xml -->
-                    <LinearLayout
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Country Spinner -->
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_country"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:padding="16dp">
+                        android:layout_height="wrap_content"
+                        android:hint="Country">
 
-                        <!-- Country Spinner -->
-                        <com.google.android.material.textfield.TextInputLayout
-                            android:id="@+id/til_country"
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_country"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="Country">
+                            android:inputType="text"/>
 
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:id="@+id/et_country"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:inputType="text"/>
+                    </com.google.android.material.textfield.TextInputLayout>
 
-                        </com.google.android.material.textfield.TextInputLayout>
+                    <!-- State Spinner -->
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:hint="State">
 
-                        <!-- State Spinner -->
-                        <com.google.android.material.textfield.TextInputLayout
-                            android:id="@+id/til_state"
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_state"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="16dp"
-                            android:hint="State">
+                            android:inputType="text"/>
 
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:id="@+id/et_state"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:inputType="text"/>
+                    </com.google.android.material.textfield.TextInputLayout>
 
-                        </com.google.android.material.textfield.TextInputLayout>
+                    <!-- District Spinner -->
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_district"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:hint="District">
 
-                        <!-- District Spinner -->
-                        <com.google.android.material.textfield.TextInputLayout
-                            android:id="@+id/til_district"
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_district"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="16dp"
-                            android:hint="District">
+                            android:inputType="text"/>
 
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:id="@+id/et_district"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:inputType="text"/>
+                    </com.google.android.material.textfield.TextInputLayout>
 
-                        </com.google.android.material.textfield.TextInputLayout>
+                    <!-- Village Spinner -->
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_village"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:hint="Village">
 
-                        <!-- Village Spinner -->
-                        <com.google.android.material.textfield.TextInputLayout
-                            android:id="@+id/til_village"
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_village"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="16dp"
-                            android:hint="Village">
+                            android:inputType="text"/>
 
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:id="@+id/et_village"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:inputType="text"/>
-
-                        </com.google.android.material.textfield.TextInputLayout>
-
-                    </LinearLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_submit"
@@ -222,7 +207,6 @@
                 android:text="Submit"
                 android:layout_alignParentBottom="true"
                 android:layout_marginTop="16dp"/>
-
 
         </LinearLayout>
     </ScrollView>

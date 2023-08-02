@@ -15,13 +15,13 @@ class LoginActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        if (PreferenceManager.getUserName(this) != "" && PreferenceManager.getUserName(this) == "admin") {
+        if (PreferenceManager.getUserType(this) != "" && PreferenceManager.getUserType(this) == "admin") {
             //navigate to admin activity
             var intent = Intent(this, AdminActivity::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
             startActivity(intent)
             finish()
-        } else if (PreferenceManager.getUserName(this) != "" && PreferenceManager.getUserName(this) == "admin") {
+        } else if (PreferenceManager.getUserType(this) != "" && PreferenceManager.getUserType(this) == "user") {
             //Navigate to user activiy
             var intent = Intent(this, MainActivity::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
@@ -50,7 +50,7 @@ class LoginActivity : AppCompatActivity() {
                 binding.loading.visibility = View.GONE
 //                Toast.makeText(this,"Success"+it?.documents.toString(),Toast.LENGTH_LONG).show()
                 if (it!!.isEmpty) return@addOnSuccessListener
-                Toast.makeText(this,it.documents[0].getString("userType")!!,Toast.LENGTH_LONG).show()
+//                Toast.makeText(this,it.documents[0].getString("userType")!!,Toast.LENGTH_LONG).show()
                 PreferenceManager.saveUser(
                     this,
                     it.documents[0].getString("userName")!!,

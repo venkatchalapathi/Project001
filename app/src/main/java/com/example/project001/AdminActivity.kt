@@ -54,46 +54,27 @@ class AdminActivity : AppCompatActivity() {
         db.collection(MyFirebaseUtils.FORMS).get().addOnSuccessListener {
             var list = arrayListOf<FormModel>()
             for(snp in it){
-                var model = FormModel(fullName = snp.getString("fullName").toString(),
+                var model = FormModel(category = snp.getString("category").toString(),
+                    fullName = snp.getString("fullName").toString(),
                 fatherName = snp.getString("fatherName").toString(),
                 contactNumber = snp.getString("contactNumber").toString(),
+                    aadharNumber = snp.getString("aadharNumber").toString(),
                 email = snp.getString("email").toString(),
+                    occupation = snp.getString("occupation").toString(),
                 country = snp.getString("country").toString(),
                 state =  snp.getString("state").toString(),
                 district = snp.getString("district").toString(),
-                village = snp.getString("village").toString())
+                    constituency = snp.getString("constituency").toString(),
+                    mandal = snp.getString("mandal").toString(),
+                village = snp.getString("village").toString(),
+                modeOfContribution = snp.getString("modeOfContribution").toString(),
+                remarks = snp.getString("remarks").toString())
                 list.add(model)
             }
             binding.recyclerView.adapter = MyListAdapter(this,list)
         }.addOnFailureListener{
 
         }
-
-       /* val options: FirestoreRecyclerOptions<FormModel> =
-            FirestoreRecyclerOptions.Builder<FormModel>()
-                .setQuery(query, FormModel::class.java)
-                .build()
-
-        firestoreUserAdapter =
-            object : FirestoreRecyclerAdapter<FormModel, UsersViewholder>(options) {
-                override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UsersViewholder {
-                    val layoutInflater = LayoutInflater.from(parent.context)
-                    val listItemBinding = RowBinding.inflate(layoutInflater, parent, false)
-                    return UsersViewholder(listItemBinding)
-                }
-
-                override fun onBindViewHolder(
-                    holder: UsersViewholder,
-                    position: Int,
-                    model: FormModel
-                ) {
-                    holder.binding.fulllName.text = model.fullName
-                    holder.binding.fatherName.text = model.fatherName
-                }
-
-            }
-*/
-
 
 
     }
@@ -106,7 +87,7 @@ class AdminActivity : AppCompatActivity() {
     }
 }
 
-class MyListAdapter(adminActivity: AdminActivity,val list: ArrayList<FormModel>) :
+class MyListAdapter(val adminActivity: AdminActivity,val list: ArrayList<FormModel>) :
     RecyclerView.Adapter<MyListAdapter.ViewHolder>() {
     class ViewHolder(itemView: View):RecyclerView.ViewHolder(itemView) {
         val binding = RowBinding.bind(itemView)
@@ -123,6 +104,23 @@ class MyListAdapter(adminActivity: AdminActivity,val list: ArrayList<FormModel>)
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.binding.fulllName.text = list[position].fullName
         holder.binding.fatherName.text = list[position].fatherName
+        holder.binding.category.text = list[position].category
+        holder.binding.aadharNumber.text = list[position].aadharNumber
+        holder.binding.constituencyTxt.text = list[position].constituency
+        holder.binding.phonenumber.text = list[position].contactNumber
+        holder.binding.email.text = list[position].email
+        holder.binding.country.text = list[position].country
+        holder.binding.stateTxt.text = list[position].state
+        holder.binding.districtTxt.text = list[position].district
+        holder.binding.mandalTxt.text = list[position].mandal
+        holder.binding.villageTxt.text = list[position].village
+        holder.binding.mocTxt.text = list[position].modeOfContribution
+        holder.binding.remarksTxt.text = list[position].remarks
+        if (list[position].category == "NRI"){
+            holder.binding.layout.background = adminActivity.resources.getDrawable(R.drawable.edit_bg)
+        }else{
+            holder.binding.layout.background = adminActivity.resources.getDrawable(R.drawable.edit_bg_green)
+        }
     }
 
 

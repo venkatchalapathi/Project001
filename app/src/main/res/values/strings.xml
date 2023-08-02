@@ -9,4 +9,254 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="json_data">{
+    "states": [
+        {
+            "state_name": "ANDRAPRADESH",
+            "districts": [
+                {
+                    "name": "ANANTAPUR",
+                    "constituency": [
+                        "ANANTAPUR URBAN",
+                        "DHARMAVARAM",
+                        "GUNTAKAL",
+                        "HINDUPUR",
+                        "KADIRI",
+                        "KALYANDURG",
+                        "MADAKASIRA",
+                        "PENUKONDA",
+                        "PUTTAPARTHI",
+                        "RAPTADU",
+                        "RAYADURG",
+                        "SINGANAMALA",
+                        "TADIPATRI",
+                        "URAVAKONDA"
+                    ]
+                },
+                {
+                    "name": "CHITTOOR",
+                    "constituency": [
+                        "CHANDRAGIRI",
+                        "CHITTOOR",
+                        "GANGADHARA NELLORE",
+                        "KUPPAM",
+                        "MADANAPALLE",
+                        "NAGARI",
+                        "PALAMANER",
+                        "PILERU",
+                        "PUNGANUR",
+                        "PUTHALAPATTU",
+                        "SATYAVEDU",
+                        "SRIKALAHASTI",
+                        "THAMBALLAPALLE",
+                        "TIRUPATI"
+                    ]
+                },
+                {
+                    "name": "EAST GODAVARI",
+                    "constituency": [
+                        "AMALAPURAM",
+                        "ANAPARTHY",
+                        "GANNAVARAM",
+                        "JAGGAMPETA",
+                        "KAKINADA CITY",
+                        "KAKINADA RURAL",
+                        "KOTHAPETA",
+                        "MANDAPETA",
+                        "MUMMIDIVARAM",
+                        "PEDDAPURAM",
+                        "PITHAPURAM",
+                        "PRATHIPADU",
+                        "RAJAHMUNDRY CITY",
+                        "RAJAMUNDRY RURAL",
+                        "RAJANAGARAM",
+                        "RAMACHANDRAPURAM",
+                        "RAMPACHODAVARAM",
+                        "RAZOLE",
+                        "TUNI"
+                    ]
+                },
+                {
+                    "name": "GUNTUR",
+                    "constituency": [
+                        "BAPATLA",
+                        "CHILAKALURIPET",
+                        "GUNTUR EAST",
+                        "GUNTUR WEST",
+                        "GURAZALA",
+                        "MACHERLA",
+                        "MANGALAGIRI",
+                        "NARASARAOPET",
+                        "PEDAKURAPADU",
+                        "PONNUR",
+                        "PRATHIPADU (SC)",
+                        "REPALLE",
+                        "SATTENAPALLI",
+                        "TADIKONDA (SC)",
+                        "TENALI",
+                        "VEMURU (SC)",
+                        "VINUKONDA"
+                    ]
+                },
+                {
+                    "name": "KADAPA",
+                    "constituency": [
+                        "BADVEL",
+                        "JAMMALAMADUGU",
+                        "KADAPA",
+                        "KAMALAPURAM",
+                        "KODUR",
+                        "MYDUKUR",
+                        "PRODDATUR",
+                        "PULIVENDLA",
+                        "RAJAMPET",
+                        "RAYACHOTI"
+                    ]
+                },
+                {
+                    "name": "KRISHNA",
+                    "constituency": [
+                        "AVANIGADDA",
+                        "GANNAVARAM",
+                        "GUDIVADA",
+                        "JAGGAYYAPETA",
+                        "KAIKALUR",
+                        "MACHILIPATNAM",
+                        "MYLAVARAM",
+                        "NANDIGAMA",
+                        "NUZVID",
+                        "PAMARRU",
+                        "PEDANA",
+                        "PENAMALURU",
+                        "TIRUVURU",
+                        "VIJAYAWADA CENTRAL",
+                        "VIJAYAWADA EAST",
+                        "VIJAYWADA WEST"
+                    ]
+                },
+                {
+                    "name": "KURNOOL",
+                    "constituency": [
+                        "ADONI",
+                        "ALLAGADDA",
+                        "ALUR",
+                        "BANAGANAPALLE",
+                        "DHONE",
+                        "KODUMUR",
+                        "KURNOOL",
+                        "MANTRALAYAM",
+                        "NANDIKOTKUR",
+                        "NANDYAL",
+                        "PANYAM",
+                        "PATTIKONDA",
+                        "SRISAILAM",
+                        "YEMMIGANUR"
+                    ]
+                },
+                {
+                    "name": "NELLORE",
+                    "constituency": [
+                        "ATMAKUR",
+                        "ATMAKUR",
+                        "GUDUR",
+                        "KAVALI",
+                        "KOVUR",
+                        "NELLORE CITY",
+                        "NELLORE RURAL",
+                        "SARVEPALLI",
+                        "SULLURPETA",
+                        "UDAYAGIRI",
+                        "VENKATAGIRI"
+                    ]
+                },
+                {
+                    "name": "PRAKASAM",
+                    "constituency": [
+                        "ADDANKI",
+                        "CHIRALA",
+                        "DARSI",
+                        "GIDDALUR",
+                        "KANDUKUR",
+                        "KANIGIRI",
+                        "KONDAPI",
+                        "MARKAPURAM",
+                        "ONGOLE",
+                        "PARCHUR",
+                        "SANTHANUTHALAPADU",
+                        "YERRAGONDAPALEM"
+                    ]
+                },
+                {
+                    "name": "SRIKAKULAM",
+                    "constituency": [
+                        "AMADALAVALASA",
+                        "ETCHERLA",
+                        "ICHCHAPURAM",
+                        "NARASANNAPETA",
+                        "PALAKONDA",
+                        "PALASA",
+                        "PATHAPATNAM",
+                        "RAJAM",
+                        "SRIKAKULAM",
+                        "TEKKALI"
+                    ]
+                },
+                {
+                    "name": "VISAKHAPATNAM",
+                    "constituency": [
+                        "ANAKAPALLI",
+                        "ARAKU VALLEY",
+                        "BHIMLI",
+                        "CHODAVARAM",
+                        "GAJUWAKA",
+                        "MADUGULA",
+                        "NARSIPATNAM",
+                        "PADERU",
+                        "PAYAKARAOPETA",
+                        "PENDURTHI",
+                        "VISAKHAPATNAM NORTH",
+                        "VISAKHAPATNAM WEST",
+                        "VISAKHAPATNAM EAST",
+                        "VISAKHAPATNAM SOUTH",
+                        "YELAMANCHILI"
+                    ]
+                },
+                {
+                    "name": "VIZIANAGARAM",
+                    "constituency": [
+                        "BOBBILI",
+                        "CHEEPURUPALLE",
+                        "GAJAPATHINAGARAM",
+                        "KURUPAM",
+                        "NELLIMARLA",
+                        "PARVATHIPURAM",
+                        "SALUR",
+                        "SRUNGAVARAPUKOTA",
+                        "VIZIANAGARAM"
+                    ]
+                },
+                {
+                    "name": "WEST GODAVARI",
+                    "constituency": [
+                        "ACHANTA",
+                        "BHIMAVARAM",
+                        "CHINTALAPUDI",
+                        "DENDULURU",
+                        "ELURU",
+                        "GOPALAPURAM",
+                        "KOVVUR",
+                        "NARASAPURAM",
+                        "NIDADAVOLE",
+                        "PALACOLE",
+                        "POLAVARAM",
+                        "TADEPALLIGUDEM",
+                        "TANUKU",
+                        "UNDI",
+                        "UNGUTURU"
+                    ]
+                }
+            ]
+        }
+    ]
+}</string>
 </resources>

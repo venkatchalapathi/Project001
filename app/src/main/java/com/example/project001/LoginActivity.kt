@@ -17,7 +17,7 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         if (PreferenceManager.getUserType(this) != "" && PreferenceManager.getUserType(this) == "admin") {
             //navigate to admin activity
-            var intent = Intent(this, AdminActivity::class.java)
+            var intent = Intent(this, AdminDummyActivity::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
             startActivity(intent)
             finish()
@@ -59,7 +59,7 @@ class LoginActivity : AppCompatActivity() {
 
                 if (PreferenceManager.getUserType(this) != "" && PreferenceManager.getUserType(this) == "admin") {
                     //navigate to admin activity
-                    var intent = Intent(this, AdminActivity::class.java)
+                    var intent = Intent(this, AdminDummyActivity::class.java)
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
                     startActivity(intent)
                     finish()
